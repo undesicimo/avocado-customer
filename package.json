@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"tailwind": "npx tailwindcss -i src/app/globals.css -o ./dist/output.css --watch"
+		"tailwind": "npx tailwindcss -i app/globals.css -o ./dist/output.css --watch"
 	},
 	"dependencies": {
 		"class-variance-authority": "^0.7.0",
