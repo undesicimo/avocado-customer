@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/themeprovider';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import '../globals.css';
 
 type P = {
 	params: { locale: string };

@@ -7,9 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"tailwind": "npx tailwindcss -i styles/globals.css -o styles/output.css --watch"
+		"tailwind": "npx tailwindcss -i ./app/globals.css -o ./dist/output.css --watch"
 	},
 	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
 		"lucide-react": "^0.279.0",
