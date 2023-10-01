@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/themeprovider';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 
@@ -27,7 +28,11 @@ export default async function LocaleLayout({
 				<NextIntlClientProvider
 					locale={locale}
 					messages={messages}>
-					{children}
+					<ThemeProvider
+						attribute='class'
+						defaultTheme='system'>
+						{children}
+					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>
 		</html>
